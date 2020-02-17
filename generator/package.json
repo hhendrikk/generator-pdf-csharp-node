@@ -1,0 +1,24 @@
+{
+  "name": "pdf-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --inspect=5858 -r ts-node/register ./src/index.ts",
+    "build": "tsc && ncp ./fonts ./dist/fonts",
+    "start:watch": "nodemon --config ./nodemon.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.7.1",
+    "ncp": "^2.0.0",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "pdfmake": "^0.1.64"
+  }
+}
